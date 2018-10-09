@@ -15,7 +15,20 @@ ssh-keygen -b 4096 -t rsa
 sudo ssh-copy-id -i file.pub root@192.168.*.**
 ```
 
-Se ejecuta el bash:
+Se crea la carpeta backup en la siguiente ruta (recomendada):
+
+```sh
+Documents/Ears/$client/backup/
+```
+Donde $client es el nombre del cliente ej: Pereira, Tunja, etc.
+
+Luego se edita el archivo portalBackup.sh y en la variable directorio agregamos el siguiente texto:
+
+```sh
+"$HOME/Documents/Ears/$client/backup/"
+```
+
+Por ultimo se ejecuta el bash:
 
 ```sh
 bash -e ./portalBackup.sh

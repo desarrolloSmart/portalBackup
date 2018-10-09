@@ -11,3 +11,12 @@ Se crea la relacion de confianza:
 ```sh
 ssh-keygen -b 4096 -t rsa
 ```
+```sh
+sudo ssh-copy-id -i file.pub root@192.168.*.**
+```
+
+Se ejecuta el bash:
+
+```sh
+bash -e ./portalBackup.sh
+```
